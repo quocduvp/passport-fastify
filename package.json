@@ -1,0 +1,48 @@
+{
+  "name": "passport-fastify",
+  "version": "0.0.1",
+  "description": "Simple, unobtrusive authentication for Node.js.",
+  "keywords": [
+    "fastify",
+    "connect",
+    "auth",
+    "authn",
+    "authentication"
+  ],
+  "author": {
+    "name": "Adward",
+    "email": "adward0511@gmail.com",
+    "url": "https://adward-nguyen-portfolio.vercel.app/"
+  },
+  "homepage": "https://www.passportjs.org/",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/quocduvp/passport-fastify.git"
+  },
+  "license": "MIT",
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://opensource.org/licenses/MIT"
+    }
+  ],
+  "main": "./lib",
+  "dependencies": {
+    "passport-strategy": "1.x.x",
+    "pause": "0.0.1"
+  },
+  "devDependencies": {
+    "make-node": "0.3.x",
+    "mocha": "2.x.x",
+    "chai": "2.x.x",
+    "chai-connect-middleware": "0.3.x",
+    "chai-passport-strategy": "0.2.x",
+    "proxyquire": "1.4.x"
+  },
+  "engines": {
+    "node": ">= 0.4.0"
+  },
+  "scripts": {
+    "test": "node_modules/.bin/mocha --reporter spec --require test/bootstrap/node test/*.test.js test/**/*.test.js"
+  }
+}
